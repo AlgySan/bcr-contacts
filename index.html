@@ -38,11 +38,11 @@
       overflow-x: hidden;
     }
 
-    /* ── Screens ── */
+    /* ââ Screens ââ */
     .screen { display: none; min-height: 100vh; flex-direction: column; }
     .screen.active { display: flex; }
 
-    /* ── Header ── */
+    /* ââ Header ââ */
     .hdr {
       background: var(--dark);
       color: var(--white);
@@ -57,11 +57,11 @@
     .hdr .back { background: none; border: none; color: var(--white); font-size: 28px; line-height: 1; cursor: pointer; padding: 0 6px 0 0; }
     .hdr .hdr-logo { font-size: 22px; }
 
-    /* ── Content ── */
+    /* ââ Content ââ */
     .content { flex: 1; padding: 20px; overflow-y: auto; padding-bottom: 90px; }
     .content.no-nav { padding-bottom: 24px; }
 
-    /* ── Bottom nav ── */
+    /* ââ Bottom nav ââ */
     .bnav {
       background: var(--dark);
       display: flex;
@@ -79,7 +79,7 @@
     .bnav button .ico { font-size: 21px; }
     .bnav button.on, .bnav button:active { color: var(--red); }
 
-    /* ── Buttons ── */
+    /* ââ Buttons ââ */
     .btn { width: 100%; border: none; border-radius: var(--radius); font-family: inherit; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: opacity 0.15s, transform 0.1s; }
     .btn:active { transform: scale(0.97); opacity: 0.85; }
     .btn:disabled { opacity: 0.5; pointer-events: none; }
@@ -89,7 +89,7 @@
     .btn-danger { background: var(--white); color: var(--red); border: 2px solid var(--red); font-size: 15px; padding: 14px 20px; }
     .btn-sm { font-size: 14px; padding: 12px 16px; border-radius: var(--radius-sm); }
 
-    /* ── Form ── */
+    /* ââ Form ââ */
     .fg { margin-bottom: 18px; }
     .fg label { display: block; font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--dark); }
     .fg label .req { color: var(--red); }
@@ -103,10 +103,10 @@
     .fg input:focus, .fg textarea:focus, .fg select:focus { outline: none; border-color: var(--red); }
     .fg textarea { min-height: 96px; resize: vertical; line-height: 1.5; }
 
-    /* ── Cards ── */
+    /* ââ Cards ââ */
     .card { background: var(--white); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
 
-    /* ── Method cards ── */
+    /* ââ Method cards ââ */
     .method-card {
       background: var(--white); border-radius: var(--radius); padding: 20px;
       margin-bottom: 14px; display: flex; align-items: center; gap: 18px;
@@ -118,14 +118,14 @@
     .method-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
     .method-card p  { font-size: 13px; color: var(--muted); line-height: 1.4; }
 
-    /* ── Contact card ── */
+    /* ââ Contact card ââ */
     .cc { background: var(--white); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; display: flex; align-items: center; gap: 14px; }
     .cc-avatar { width: 46px; height: 46px; border-radius: 50%; background: var(--red); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; flex-shrink: 0; }
     .cc-info h3 { font-size: 15px; font-weight: 700; }
     .cc-info p  { font-size: 12px; color: var(--muted); margin-top: 2px; }
     .cc-meta { margin-left: auto; text-align: right; font-size: 11px; color: var(--muted); line-height: 1.6; }
 
-    /* ── Toast ── */
+    /* ââ Toast ââ */
     .toast {
       position: fixed; bottom: 88px; left: 50%; transform: translateX(-50%);
       background: var(--dark); color: var(--white); padding: 11px 22px;
@@ -137,30 +137,31 @@
     .toast.ok  { background: #1a6b2e; }
     .toast.err { background: var(--red); }
 
-    /* ── Spinner ── */
+    /* ââ Spinner ââ */
     .spin { width: 36px; height: 36px; border: 4px solid var(--border); border-top-color: var(--red); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 24px auto; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* ── Setup / welcome ── */
+    /* ââ Setup / welcome ââ */
     .welcome-logo { text-align: center; margin: 36px 0 28px; }
     .welcome-logo .wl-circle { width: 90px; height: 90px; background: var(--red); border-radius: 50%; margin: 0 auto 14px; display: flex; align-items: center; justify-content: center; font-size: 44px; box-shadow: 0 4px 20px rgba(200,55,45,0.35); }
     .welcome-logo h2 { font-size: 24px; font-weight: 800; }
     .welcome-logo p  { color: var(--muted); margin-top: 6px; }
 
-    /* ── Tip box ── */
+    /* ââ Tip box ââ */
     .tip { background: #FFF9E6; border-left: 4px solid var(--warning); border-radius: var(--radius-sm); padding: 11px 14px; margin-bottom: 18px; font-size: 14px; color: #5C4000; line-height: 1.5; }
+    .tip-green { background: #E8F8EE; border-left: 4px solid var(--success); border-radius: var(--radius-sm); padding: 11px 14px; margin-bottom: 18px; font-size: 14px; color: #1a6b2e; line-height: 1.5; }
 
-    /* ── Event banner ── */
+    /* ââ Event banner ââ */
     .event-banner { background: var(--dark); color: var(--white); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center; }
     .event-banner .el { font-size: 11px; opacity: 0.65; text-transform: uppercase; letter-spacing: 0.5px; }
     .event-banner .en { font-size: 15px; font-weight: 700; margin-top: 4px; }
     .event-banner .ec { font-size: 30px; font-weight: 800; color: var(--red); }
     .event-banner .ecl{ font-size: 10px; opacity: 0.65; }
 
-    /* ── Section title ── */
+    /* ââ Section title ââ */
     .stitle { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: var(--muted); margin-bottom: 10px; }
 
-    /* ── Voice screen ── */
+    /* ââ Voice screen ââ */
     .mic-wrap { display: flex; flex-direction: column; align-items: center; padding: 28px 0; }
     .mic-btn { width: 110px; height: 110px; border-radius: 50%; background: var(--red); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 44px; box-shadow: 0 4px 20px rgba(200,55,45,0.4); transition: transform 0.1s; margin-bottom: 18px; }
     .mic-btn.rec { animation: pulse 1s ease-in-out infinite; }
@@ -168,13 +169,13 @@
     @keyframes pulse { 0%,100% { box-shadow: 0 4px 20px rgba(200,55,45,0.4); } 50% { box-shadow: 0 6px 32px rgba(200,55,45,0.7); transform: scale(1.04); } }
     .voice-status { font-size: 15px; color: var(--muted); text-align: center; }
 
-    /* ── Camera ── */
+    /* ââ Camera ââ */
     .cam-area { background: #000; border-radius: var(--radius); overflow: hidden; position: relative; margin-bottom: 14px; }
     .cam-area video { width: 100%; height: 260px; object-fit: cover; display: block; }
     .cam-area canvas { display: none; }
     .cam-guide { position: absolute; inset: 20px; border: 3px dashed rgba(255,255,255,0.6); border-radius: 10px; pointer-events: none; }
 
-    /* ── QR ── */
+    /* ââ QR ââ */
     .qr-box { background: var(--white); border-radius: var(--radius); padding: 28px; text-align: center; box-shadow: var(--shadow); }
     .qr-box h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
     .qr-box p  { color: var(--muted); font-size: 13px; }
@@ -182,49 +183,49 @@
     #qr-canvas-container canvas { max-width: 200px; width: 100%; }
     .qr-url { font-size: 11px; color: var(--muted); word-break: break-all; background: var(--bg); padding: 7px 10px; border-radius: var(--radius-sm); margin-top: 10px; }
 
-    /* ── Register (public form) ── */
+    /* ââ Register (public form) ââ */
     .reg-hdr { background: var(--dark); color: var(--white); padding: 36px 24px 28px; text-align: center; }
     .reg-hdr .rh-logo { font-size: 50px; margin-bottom: 10px; }
     .reg-hdr h1 { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
     .reg-hdr p  { font-size: 13px; opacity: 0.8; line-height: 1.5; }
 
-    /* ── Checkbox ── */
+    /* ââ Checkbox ââ */
     .cb-row { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 20px; }
     .cb-row input[type=checkbox] { width: 24px; height: 24px; flex-shrink: 0; accent-color: var(--red); margin-top: 1px; }
     .cb-row label { font-size: 14px; line-height: 1.6; color: var(--text); }
 
-    /* ── Success ── */
+    /* ââ Success ââ */
     .success-panel { text-align: center; padding: 56px 20px; }
     .success-panel .si { font-size: 70px; margin-bottom: 20px; }
     .success-panel h2 { font-size: 24px; font-weight: 800; margin-bottom: 10px; }
     .success-panel p  { color: var(--muted); font-size: 15px; line-height: 1.6; margin-bottom: 28px; }
 
-    /* ── Progress dots ── */
+    /* ââ Progress dots ââ */
     .dots { display: flex; gap: 8px; justify-content: center; margin-bottom: 22px; }
     .dots .d { width: 10px; height: 10px; border-radius: 50%; background: var(--border); transition: background 0.2s; }
     .dots .d.on { background: var(--red); }
 
-    /* ── Detail sections ── */
+    /* ââ Detail sections ââ */
     .dsec { background: var(--white); border-radius: var(--radius); padding: 18px; margin-bottom: 14px; }
     .dsec h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); margin-bottom: 12px; }
     .drow { display: flex; gap: 10px; margin-bottom: 9px; }
     .drow .dl { font-size: 12px; color: var(--muted); min-width: 80px; flex-shrink: 0; padding-top: 1px; }
     .drow .dv { font-size: 14px; color: var(--text); }
 
-    /* ── Brevo badge ── */
+    /* ââ Brevo badge ââ */
     .brevo-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 5px 10px; border-radius: 20px; }
     .brevo-badge.ok  { background: #E8F8EE; color: #1a6b2e; }
     .brevo-badge.bad { background: #FEECEB; color: var(--red); }
 
-    /* ── Empty state ── */
+    /* ââ Empty state ââ */
     .empty { text-align: center; padding: 52px 20px; color: var(--muted); }
     .empty .ei { font-size: 46px; margin-bottom: 14px; }
     .empty p { font-size: 15px; line-height: 1.6; }
 
-    /* ── Divider ── */
+    /* ââ Divider ââ */
     .div { height: 1px; background: var(--border); margin: 18px 0; }
 
-    /* ── Utility ── */
+    /* ââ Utility ââ */
     .mt8  { margin-top: 8px; }
     .mt16 { margin-top: 16px; }
     .mt20 { margin-top: 20px; }
@@ -240,27 +241,27 @@
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Loading
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-loading">
   <div class="content no-nav" style="display:flex;align-items:center;justify-content:center;">
-    <div class="tc"><div style="font-size:60px;margin-bottom:12px">📻</div><div class="spin"></div><p class="tm mt8">Loading BCR Contacts…</p></div>
+    <div class="tc"><div style="font-size:60px;margin-bottom:12px">ð»</div><div class="spin"></div><p class="tm mt8">Loading BCR Contactsâ¦</p></div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Setup (first run)
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-setup">
   <div class="content no-nav">
     <div class="welcome-logo">
-      <div class="wl-circle">📻</div>
+      <div class="wl-circle">ð»</div>
       <h2>BCR Contacts</h2>
       <p>Your contact capture tool<br>for events &amp; networking</p>
     </div>
 
-    <div class="tip">💡 <strong>Quick setup — 3 fields and you're ready!</strong> You can change everything later in Settings.</div>
+    <div class="tip">ð¡ <strong>Quick setup â 3 fields and you're ready!</strong> You can change everything later in Settings.</div>
 
     <div class="fg">
       <label>Your name <span class="req">*</span>
@@ -271,37 +272,37 @@
 
     <div class="fg">
       <label>Brevo API Key <span class="req">*</span>
-        <span class="hint">Brevo → My Account → SMTP &amp; API → API Keys → Create a new API key</span>
+        <span class="hint">Brevo â My Account â SMTP &amp; API â API Keys â Create a new API key</span>
       </label>
-      <input type="password" id="su-key" placeholder="xkeysib-…" autocomplete="off">
+      <input type="password" id="su-key" placeholder="xkeysib-â¦" autocomplete="off">
     </div>
 
     <div class="fg">
       <label>Brevo Contact List ID <span class="req">*</span>
-        <span class="hint">Brevo → Contacts → Lists → the number shown next to your list name</span>
+        <span class="hint">Brevo â Contacts â Lists â the number shown next to your list name</span>
       </label>
       <input type="number" id="su-list" placeholder="e.g. 5" autocomplete="off">
     </div>
 
     <div class="fg">
       <label>App URL <span style="color:var(--muted);font-weight:400;">(for QR code)</span>
-        <span class="hint">Where this app is hosted, e.g. https://brixtonradio.github.io/contacts — you can set this later</span>
+        <span class="hint">Where this app is hosted, e.g. https://algysan.github.io/bcr-contacts â you can set this later</span>
       </label>
-      <input type="url" id="su-url" placeholder="https://brixtonradio.github.io/contacts" autocomplete="off">
+      <input type="url" id="su-url" placeholder="https://algysan.github.io/bcr-contacts" autocomplete="off">
     </div>
 
-    <button class="btn btn-red" onclick="doSetup()">✅ Get Started</button>
+    <button class="btn btn-red" onclick="doSetup()">â Get Started</button>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Home
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-home">
   <div class="hdr">
-    <span class="hdr-logo">📻</span>
+    <span class="hdr-logo">ð»</span>
     <h1 id="home-greeting">BCR Contacts</h1>
-    <div id="brevo-pill" class="brevo-badge bad">● Brevo</div>
+    <div id="brevo-pill" class="brevo-badge bad">â Brevo</div>
   </div>
   <div class="content">
     <div class="event-banner">
@@ -316,31 +317,31 @@
     </div>
 
     <button class="btn btn-red mb16" onclick="go('sc-add')" style="font-size:20px;padding:22px;">
-      ➕&nbsp; Add Contact
+      â&nbsp; Add Contact
     </button>
 
     <div class="grid2">
-      <button class="btn btn-dark" onclick="go('sc-qr')">📱 QR Code</button>
-      <button class="btn btn-dark" onclick="go('sc-contacts')">👥 All Contacts</button>
+      <button class="btn btn-dark" onclick="go('sc-qr')">ð± QR Code</button>
+      <button class="btn btn-dark" onclick="go('sc-contacts')">ð¥ All Contacts</button>
     </div>
 
     <div class="stitle">Recent contacts</div>
     <div id="home-recent"></div>
   </div>
   <nav class="bnav">
-    <button class="on" onclick="go('sc-home')"><span class="ico">🏠</span>Home</button>
-    <button onclick="go('sc-contacts')"><span class="ico">👥</span>Contacts</button>
-    <button onclick="go('sc-qr')"><span class="ico">📱</span>QR Code</button>
-    <button onclick="go('sc-settings')"><span class="ico">⚙️</span>Settings</button>
+    <button class="on" onclick="go('sc-home')"><span class="ico">ð </span>Home</button>
+    <button onclick="go('sc-contacts')"><span class="ico">ð¥</span>Contacts</button>
+    <button onclick="go('sc-qr')"><span class="ico">ð±</span>QR Code</button>
+    <button onclick="go('sc-settings')"><span class="ico">âï¸</span>Settings</button>
   </nav>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Add (method picker)
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-add">
   <div class="hdr">
-    <button class="back" onclick="go('sc-home')">‹</button>
+    <button class="back" onclick="go('sc-home')">â¹</button>
     <h1>Add Contact</h1>
   </div>
   <div class="content">
@@ -348,23 +349,40 @@
     <p style="font-size:18px;font-weight:700;margin-bottom:18px;">How would you like to add them?</p>
 
     <div class="method-card" onclick="go('sc-voice')">
-      <div class="mico">🎤</div>
+      <div class="mico">ð¤</div>
       <div>
         <h3>Voice Recording</h3>
-        <p>Speak their details out loud — great when you can't type right now.</p>
+        <p>Speak their details out loud â great when you can't type right now.</p>
       </div>
     </div>
 
     <div class="method-card" onclick="go('sc-camera')">
-      <div class="mico">📷</div>
+      <div class="mico">ð·</div>
       <div>
         <h3>Scan Business Card</h3>
-        <p>Point your camera at their card — text is detected automatically.</p>
+        <p>Point your camera at their card â text is detected automatically.</p>
       </div>
     </div>
 
+    <div class="method-card" onclick="go('sc-qrscan')">
+      <div class="mico">ð²</div>
+      <div>
+        <h3>Scan Contact QR</h3>
+        <p>Scan a QR code from an Android or iPhone Contacts app.</p>
+      </div>
+    </div>
+
+    <div class="method-card" onclick="triggerVCF()">
+      <div class="mico">ð</div>
+      <div>
+        <h3>Import Contact Card</h3>
+        <p>Import a .vcf file from AirDrop, email, or WhatsApp.</p>
+      </div>
+    </div>
+    <input type="file" id="vcf-input" accept=".vcf,text/vcard,text/x-vcard" style="display:none" onchange="handleVCF(event)">
+
     <div class="method-card" onclick="resetForm(); go('sc-form');">
-      <div class="mico">✏️</div>
+      <div class="mico">âï¸</div>
       <div>
         <h3>Type Manually</h3>
         <p>Enter name, email and notes by hand.</p>
@@ -373,51 +391,53 @@
 
     <div class="div"></div>
     <p class="tm tc mb8">Or ask them to scan your QR code</p>
-    <button class="btn btn-outline btn-sm" onclick="go('sc-qr')">📱 Show QR Code</button>
+    <button class="btn btn-outline btn-sm" onclick="go('sc-qr')">ð± Show QR Code</button>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Voice
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-voice">
   <div class="hdr">
-    <button class="back" onclick="stopListening(); go('sc-add')">‹</button>
+    <button class="back" onclick="stopListening(); go('sc-add')">â¹</button>
     <h1>Voice Capture</h1>
   </div>
   <div class="content">
     <div class="dots"><div class="d on"></div><div class="d on"></div><div class="d"></div></div>
 
-    <div class="tip">💡 Say something like: <em>"Their name is Sarah Jones, email sarah at company dot com, she works at Lambeth Council."</em></div>
+    <div id="voice-mode-banner" class="tip" style="font-size:13px;margin-bottom:12px;"></div>
+
+    <div class="tip">ð¡ Say something like: <em>"Their name is Sarah Jones, email sarah at company dot com, she works at Lambeth Council."</em></div>
 
     <div class="mic-wrap">
-      <button class="mic-btn" id="mic-btn" onclick="toggleVoice()">🎤</button>
+      <button class="mic-btn" id="mic-btn" onclick="toggleVoice()">ð¤</button>
       <p class="voice-status" id="voice-status">Tap the microphone to start</p>
     </div>
 
     <div class="fg">
       <label>Transcript <span class="hint">Edit if anything was wrong, then tap Next</span></label>
-      <textarea id="voice-tx" placeholder="Your speech will appear here…"></textarea>
+      <textarea id="voice-tx" placeholder="Your speech will appear hereâ¦"></textarea>
     </div>
 
     <button class="btn btn-red" id="voice-next" onclick="parseVoice()" style="display:none;">
-      Next: Review Details →
+      Next: Review Details â
     </button>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Camera / Card Scan
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-camera">
   <div class="hdr">
-    <button class="back" onclick="stopCam(); go('sc-add')">‹</button>
+    <button class="back" onclick="stopCam(); go('sc-add')">â¹</button>
     <h1>Scan Business Card</h1>
   </div>
   <div class="content">
     <div class="dots"><div class="d on"></div><div class="d on"></div><div class="d"></div></div>
 
-    <div class="tip">💡 Hold the card still and well-lit. All text in the frame will be read.</div>
+    <div class="tip">ð¡ Hold the card still and well-lit. All text in the frame will be read.</div>
 
     <div class="cam-area">
       <video id="cam-video" autoplay playsinline muted></video>
@@ -425,27 +445,50 @@
       <div class="cam-guide"></div>
     </div>
 
-    <button class="btn btn-red mb16" id="cap-btn" onclick="captureCard()">📸 Capture Card</button>
+    <button class="btn btn-red mb16" id="cap-btn" onclick="captureCard()">ð¸ Capture Card</button>
 
     <div id="ocr-loading" style="display:none;text-align:center;">
       <div class="spin"></div>
-      <p class="tm" id="ocr-prog">Reading card…</p>
+      <p class="tm" id="ocr-prog">Reading cardâ¦</p>
     </div>
 
     <div id="ocr-result" style="display:none;">
-      <div class="stitle">Detected text — edit if needed</div>
+      <div class="stitle">Detected text â edit if needed</div>
       <div class="fg"><textarea id="ocr-text" style="min-height:110px;"></textarea></div>
-      <button class="btn btn-red" onclick="parseOCR()">Next: Review Details →</button>
+      <button class="btn btn-red" onclick="parseOCR()">Next: Review Details â</button>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
+     SCREEN: Contact QR Scan
+âââââââââââââââââââââââââââââââââââââââ -->
+<div class="screen" id="sc-qrscan">
+  <div class="hdr">
+    <button class="back" onclick="stopQRScan(); go('sc-add')">â¹</button>
+    <h1>Scan Contact QR</h1>
+  </div>
+  <div class="content">
+    <div class="dots"><div class="d on"></div><div class="d on"></div><div class="d"></div></div>
+
+    <div class="tip">ð¡ Works with Android Contacts QR codes, iPhone contact QR codes, and vCard QR codes on business cards.</div>
+
+    <div class="cam-area">
+      <video id="qrscan-video" autoplay playsinline muted></video>
+      <canvas id="qrscan-canvas" style="display:none;"></canvas>
+      <div class="cam-guide"></div>
+    </div>
+
+    <p class="tm tc mt8" id="qrscan-status">Initialising cameraâ¦</p>
+  </div>
+</div>
+
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Contact Form
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-form">
   <div class="hdr">
-    <button class="back" onclick="go('sc-add')">‹</button>
+    <button class="back" onclick="go('sc-add')">â¹</button>
     <h1>Contact Details</h1>
   </div>
   <div class="content">
@@ -471,19 +514,19 @@
     </div>
 
     <div class="div"></div>
-    <p style="font-size:16px;font-weight:700;margin-bottom:16px;">📝 Your notes</p>
+    <p style="font-size:16px;font-weight:700;margin-bottom:16px;">ð Your notes</p>
 
     <div class="fg">
       <label>Why is this contact important?
         <span class="hint">Remind yourself why you connected</span>
       </label>
-      <textarea id="f-why" placeholder="e.g. Could sponsor next year's festival…"></textarea>
+      <textarea id="f-why" placeholder="e.g. Could sponsor next year's festivalâ¦"></textarea>
     </div>
     <div class="fg">
       <label>Follow-up action
         <span class="hint">What do you need to do next?</span>
       </label>
-      <input type="text" id="f-action" placeholder="e.g. Send programme overview, arrange a call…">
+      <input type="text" id="f-action" placeholder="e.g. Send programme overview, arrange a callâ¦">
     </div>
     <div class="fg">
       <label>Follow-up date</label>
@@ -491,58 +534,58 @@
     </div>
 
     <button class="btn btn-red mt20" onclick="saveContact(true)" id="save-brevo-btn">
-      ✅ Save &amp; Send to Brevo
+      â Save &amp; Send to Brevo
     </button>
     <button class="btn btn-outline mt8" onclick="saveContact(false)">
-      💾 Save on This Device Only
+      ð¾ Save on This Device Only
     </button>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Saved confirmation
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-saved">
-  <div class="hdr"><h1>Contact Saved ✅</h1></div>
+  <div class="hdr"><h1>Contact Saved â</h1></div>
   <div class="content no-nav">
     <div class="success-panel">
-      <div class="si">✅</div>
+      <div class="si">â</div>
       <h2 id="saved-title">Saved!</h2>
       <p id="saved-msg">Added to Brevo and a consent email has been sent.</p>
       <button class="btn btn-red" onclick="go('sc-home')">Back to Home</button>
-      <button class="btn btn-outline mt8" onclick="go('sc-add')">➕ Add Another Contact</button>
+      <button class="btn btn-outline mt8" onclick="go('sc-add')">â Add Another Contact</button>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Contacts list
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-contacts">
   <div class="hdr">
-    <button class="back" onclick="go('sc-home')">‹</button>
+    <button class="back" onclick="go('sc-home')">â¹</button>
     <h1>All Contacts</h1>
   </div>
   <div class="content">
-    <input type="search" id="search-box" placeholder="🔍 Search…"
+    <input type="search" id="search-box" placeholder="ð Searchâ¦"
       style="width:100%;padding:12px 14px;border:2px solid var(--border);border-radius:var(--radius);font-size:16px;margin-bottom:14px;background:var(--white);"
       oninput="filterContacts()">
     <div id="contacts-list"></div>
   </div>
   <nav class="bnav">
-    <button onclick="go('sc-home')"><span class="ico">🏠</span>Home</button>
-    <button class="on" onclick="go('sc-contacts')"><span class="ico">👥</span>Contacts</button>
-    <button onclick="go('sc-qr')"><span class="ico">📱</span>QR Code</button>
-    <button onclick="go('sc-settings')"><span class="ico">⚙️</span>Settings</button>
+    <button onclick="go('sc-home')"><span class="ico">ð </span>Home</button>
+    <button class="on" onclick="go('sc-contacts')"><span class="ico">ð¥</span>Contacts</button>
+    <button onclick="go('sc-qr')"><span class="ico">ð±</span>QR Code</button>
+    <button onclick="go('sc-settings')"><span class="ico">âï¸</span>Settings</button>
   </nav>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Contact detail
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-detail">
   <div class="hdr">
-    <button class="back" onclick="go('sc-contacts')">‹</button>
+    <button class="back" onclick="go('sc-contacts')">â¹</button>
     <h1 id="detail-hdr">Contact</h1>
   </div>
   <div class="content">
@@ -564,50 +607,50 @@
       <div class="drow"><span class="dl">Event</span><span class="dv" id="d-event"></span></div>
       <div class="drow"><span class="dl">Brevo</span><span class="dv" id="d-brevo"></span></div>
     </div>
-    <button class="btn btn-red mt8" id="d-sync-btn" onclick="syncCurrent()">🔄 Sync to Brevo</button>
-    <button class="btn btn-danger mt8" onclick="deleteCurrent()">🗑️ Delete Contact</button>
+    <button class="btn btn-red mt8" id="d-sync-btn" onclick="syncCurrent()">ð Sync to Brevo</button>
+    <button class="btn btn-danger mt8" onclick="deleteCurrent()">ðï¸ Delete Contact</button>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: QR Code
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-qr">
   <div class="hdr">
-    <button class="back" onclick="go('sc-home')">‹</button>
+    <button class="back" onclick="go('sc-home')">â¹</button>
     <h1>QR Self-Registration</h1>
   </div>
   <div class="content">
     <div class="qr-box">
-      <h3>📱 Show this to your contact</h3>
-      <p>They scan it on their phone and fill in their own details — with GDPR consent.</p>
+      <h3>ð± Show this to your contact</h3>
+      <p>They scan it on their phone and fill in their own details â with GDPR consent.</p>
       <div id="qr-canvas-container"></div>
       <div class="qr-url" id="qr-url-text"></div>
     </div>
 
     <div class="div"></div>
     <div class="fg">
-      <label>Event name <span class="hint">Update this before each event — it appears in the registration form</span></label>
+      <label>Event name <span class="hint">Update this before each event â it appears in the registration form</span></label>
       <input type="text" id="qr-event" placeholder="e.g. Lambeth Community Awards 2026" oninput="saveEvent()">
     </div>
 
-    <button class="btn btn-dark mt8" onclick="shareQR()">📤 Share QR Link</button>
-    <p class="tm tc mt8" style="font-size:11px;">⚠️ The QR link includes your Brevo credentials — only share with trusted contacts</p>
+    <button class="btn btn-dark mt8" onclick="shareQR()">ð¤ Share QR Link</button>
+    <p class="tm tc mt8" style="font-size:11px;">â ï¸ The QR link includes your Brevo credentials â only share with trusted contacts</p>
   </div>
   <nav class="bnav">
-    <button onclick="go('sc-home')"><span class="ico">🏠</span>Home</button>
-    <button onclick="go('sc-contacts')"><span class="ico">👥</span>Contacts</button>
-    <button class="on" onclick="go('sc-qr')"><span class="ico">📱</span>QR Code</button>
-    <button onclick="go('sc-settings')"><span class="ico">⚙️</span>Settings</button>
+    <button onclick="go('sc-home')"><span class="ico">ð </span>Home</button>
+    <button onclick="go('sc-contacts')"><span class="ico">ð¥</span>Contacts</button>
+    <button class="on" onclick="go('sc-qr')"><span class="ico">ð±</span>QR Code</button>
+    <button onclick="go('sc-settings')"><span class="ico">âï¸</span>Settings</button>
   </nav>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Settings
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-settings">
   <div class="hdr">
-    <button class="back" onclick="go('sc-home')">‹</button>
+    <button class="back" onclick="go('sc-home')">â¹</button>
     <h1>Settings</h1>
   </div>
   <div class="content">
@@ -616,55 +659,64 @@
 
     <div class="div"></div>
     <div class="stitle">Brevo Integration</div>
-    <div id="s-brevo-status" class="brevo-badge bad mb16" style="display:inline-flex;">● Not connected</div>
+    <div id="s-brevo-status" class="brevo-badge bad mb16" style="display:inline-flex;">â Not connected</div>
 
     <div class="fg">
-      <label>API Key <span class="hint">Brevo → My Account → SMTP &amp; API → API Keys</span></label>
-      <input type="password" id="s-key" placeholder="xkeysib-…" autocomplete="off">
+      <label>API Key <span class="hint">Brevo â My Account â SMTP &amp; API â API Keys</span></label>
+      <input type="password" id="s-key" placeholder="xkeysib-â¦" autocomplete="off">
     </div>
     <div class="fg">
-      <label>Contact List ID <span class="hint">Brevo → Contacts → Lists → the number next to your list</span></label>
+      <label>Contact List ID <span class="hint">Brevo â Contacts â Lists â the number next to your list</span></label>
       <input type="number" id="s-list" placeholder="5" autocomplete="off">
     </div>
-    <button class="btn btn-dark mb16" onclick="testBrevo()">🔌 Test Connection</button>
+    <button class="btn btn-dark mb16" onclick="testBrevo()">ð Test Connection</button>
 
     <div class="div"></div>
     <div class="stitle">GDPR Consent Email</div>
     <div class="fg">
       <label>Brevo Template ID <span style="color:var(--muted);font-weight:400;">(optional)</span>
-        <span class="hint">If set, a consent email is sent to each new contact. Create a template in Brevo → Transactional → Templates.</span>
+        <span class="hint">If set, a consent email is sent to each new contact. Create a template in Brevo â Transactional â Templates.</span>
       </label>
       <input type="number" id="s-template" placeholder="e.g. 12" autocomplete="off">
     </div>
 
     <div class="div"></div>
-    <div class="stitle">App URL</div>
+    <div class="stitle">Voice Transcription</div>
     <div class="fg">
-      <label>Hosting URL <span class="hint">Where this app lives — used to generate your QR code</span></label>
-      <input type="url" id="s-url" placeholder="https://brixtonradio.github.io/contacts" autocomplete="off">
+      <label>Groq API Key <span style="color:var(--muted);font-weight:400;">(optional â free)</span>
+        <span class="hint">Sign up free at groq.com â enables Whisper AI transcription, which is far more accurate than built-in iOS voice recognition, especially for names and company names. No credit card needed.</span>
+      </label>
+      <input type="password" id="s-groq" placeholder="gsk_â¦" autocomplete="off">
     </div>
 
-    <button class="btn btn-red mt8" onclick="saveSettings()">💾 Save Settings</button>
+    <div class="div"></div>
+    <div class="stitle">App URL</div>
+    <div class="fg">
+      <label>Hosting URL <span class="hint">Where this app lives â used to generate your QR code</span></label>
+      <input type="url" id="s-url" placeholder="https://algysan.github.io/bcr-contacts" autocomplete="off">
+    </div>
+
+    <button class="btn btn-red mt8" onclick="saveSettings()">ð¾ Save Settings</button>
 
     <div class="div"></div>
     <div class="stitle" style="color:var(--red);">Data</div>
-    <button class="btn btn-outline mb8" onclick="exportCSV()">📥 Export All Contacts (CSV)</button>
-    <button class="btn btn-danger" onclick="clearData()">🗑️ Clear All Data</button>
+    <button class="btn btn-outline mb8" onclick="exportCSV()">ð¥ Export All Contacts (CSV)</button>
+    <button class="btn btn-danger" onclick="clearData()">ðï¸ Clear All Data</button>
   </div>
   <nav class="bnav">
-    <button onclick="go('sc-home')"><span class="ico">🏠</span>Home</button>
-    <button onclick="go('sc-contacts')"><span class="ico">👥</span>Contacts</button>
-    <button onclick="go('sc-qr')"><span class="ico">📱</span>QR Code</button>
-    <button class="on" onclick="go('sc-settings')"><span class="ico">⚙️</span>Settings</button>
+    <button onclick="go('sc-home')"><span class="ico">ð </span>Home</button>
+    <button onclick="go('sc-contacts')"><span class="ico">ð¥</span>Contacts</button>
+    <button onclick="go('sc-qr')"><span class="ico">ð±</span>QR Code</button>
+    <button class="on" onclick="go('sc-settings')"><span class="ico">âï¸</span>Settings</button>
   </nav>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- âââââââââââââââââââââââââââââââââââââââ
      SCREEN: Self-Registration (public)
-═══════════════════════════════════════ -->
+âââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="sc-register">
   <div class="reg-hdr">
-    <div class="rh-logo">📻</div>
+    <div class="rh-logo">ð»</div>
     <h1>Brixton Community Radio</h1>
     <p id="reg-intro">Register your details to stay connected with BCR's programmes and events.</p>
   </div>
@@ -689,7 +741,7 @@
       <div class="fg">
         <label>How would you describe yourself?</label>
         <select id="r-type">
-          <option value="">Select an option…</option>
+          <option value="">Select an optionâ¦</option>
           <option>Community Member</option>
           <option>Local Business</option>
           <option>Third Sector / Charity</option>
@@ -706,12 +758,12 @@
           I consent to Brixton Community Radio storing my contact details to send relevant updates about BCR's programmes and events. I understand I can unsubscribe at any time.
         </label>
       </div>
-      <button class="btn btn-red" onclick="submitReg()">✅ Submit</button>
+      <button class="btn btn-red" onclick="submitReg()">â Submit</button>
       <p class="tm tc mt16" style="font-size:11px;">Your data is handled in line with GDPR. BCR will never share your details with third parties.</p>
     </div>
     <div id="reg-thanks" style="display:none;">
       <div class="success-panel">
-        <div class="si">🎉</div>
+        <div class="si">ð</div>
         <h2>Thank you!</h2>
         <p>You're registered with Brixton Community Radio. We'll be in touch with updates about our programmes and community events.</p>
         <p class="tm" style="margin-top:10px;font-size:12px;">To unsubscribe, click the link in any email we send you.</p>
@@ -724,29 +776,29 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <script>
-/* ══════════════════════════════════════════════════
-   BCR Contacts PWA — Main Script
-   Version 1.0
-══════════════════════════════════════════════════ */
+/* ââââââââââââââââââââââââââââââââââââââââââââââââââ
+   BCR Contacts PWA â Main Script
+   Version 2.0 â Groq Whisper Â· vCard Import Â· Contact QR Scan
+ââââââââââââââââââââââââââââââââââââââââââââââââââ */
 
 const BREVO = 'https://api.brevo.com/v3';
 
-/* ── State ── */
+/* ââ State ââ */
 const S = {
-  recognition: null,
-  isListening: false,
-  camStream: null,
-  currentContact: null,   // contact being viewed in detail
-  regParams: {},           // params parsed from URL for registration form
+  recognition:    null,
+  isListening:    false,
+  camStream:      null,
+  currentContact: null,
+  regParams:      {},
 };
 
-/* ── Storage helpers ── */
-const cfg = () => { try { return JSON.parse(localStorage.getItem('bcr_cfg') || '{}'); } catch { return {}; } };
-const saveCfg = d => localStorage.setItem('bcr_cfg', JSON.stringify(d));
-const contacts = () => { try { return JSON.parse(localStorage.getItem('bcr_cx') || '[]'); } catch { return []; } };
-const saveContacts = cx => localStorage.setItem('bcr_cx', JSON.stringify(cx));
+/* ââ Storage helpers ââ */
+const cfg         = () => { try { return JSON.parse(localStorage.getItem('bcr_cfg') || '{}'); } catch { return {}; } };
+const saveCfg     = d  => localStorage.setItem('bcr_cfg', JSON.stringify(d));
+const contacts    = () => { try { return JSON.parse(localStorage.getItem('bcr_cx') || '[]'); } catch { return []; } };
+const saveContacts= cx => localStorage.setItem('bcr_cx', JSON.stringify(cx));
 
-/* ── Router ── */
+/* ââ Router ââ */
 function go(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   const el = document.getElementById(id);
@@ -757,8 +809,8 @@ function go(id) {
 function onShow(id) {
   const c = cfg();
   if (id === 'sc-home') {
-    document.getElementById('home-greeting').textContent = `Hi, ${c.name || 'there'} 👋`;
-    document.getElementById('home-event').textContent = c.eventName || 'No event set — tap QR Code to set one';
+    document.getElementById('home-greeting').textContent = `Hi, ${c.name || 'there'} ð`;
+    document.getElementById('home-event').textContent = c.eventName || 'No event set â tap QR Code to set one';
     const today = new Date().toDateString();
     document.getElementById('home-count').textContent = contacts().filter(x => new Date(x.added).toDateString() === today).length;
     renderRecent();
@@ -767,11 +819,12 @@ function onShow(id) {
   if (id === 'sc-contacts') renderContactsList();
   if (id === 'sc-qr') { buildQR(); document.getElementById('qr-event').value = c.eventName || ''; }
   if (id === 'sc-settings') {
-    document.getElementById('s-name').value     = c.name     || '';
-    document.getElementById('s-key').value      = c.apiKey   || '';
-    document.getElementById('s-list').value     = c.listId   || '';
-    document.getElementById('s-url').value      = c.appUrl   || '';
+    document.getElementById('s-name').value     = c.name       || '';
+    document.getElementById('s-key').value      = c.apiKey     || '';
+    document.getElementById('s-list').value     = c.listId     || '';
+    document.getElementById('s-url').value      = c.appUrl     || '';
     document.getElementById('s-template').value = c.templateId || '';
+    document.getElementById('s-groq').value     = c.groqKey    || '';
     updateBrevoStatusEl();
   }
   if (id === 'sc-voice') {
@@ -779,17 +832,27 @@ function onShow(id) {
     document.getElementById('voice-next').style.display = 'none';
     document.getElementById('voice-status').textContent = 'Tap the microphone to start';
     document.getElementById('mic-btn').classList.remove('rec');
-    document.getElementById('mic-btn').textContent = '🎤';
+    document.getElementById('mic-btn').textContent = 'ð¤';
+    // Show voice mode banner
+    const groqKey = cfg().groqKey;
+    const banner  = document.getElementById('voice-mode-banner');
+    if (groqKey) {
+      banner.className = 'tip-green';
+      banner.textContent = 'â Whisper AI (Groq) â tap mic to record, tap again to stop and transcribe.';
+    } else {
+      banner.className = 'tip';
+      banner.textContent = 'ð¡ Using iOS voice recognition. Add a free Groq key in Settings for much better accuracy â especially for names and company names.';
+    }
   }
   if (id === 'sc-camera') startCam();
+  if (id === 'sc-qrscan') startQRScan();
   if (id === 'sc-form') {
-    // Default follow-up date = 7 days from now
     const d = new Date(); d.setDate(d.getDate() + 7);
     document.getElementById('f-date').value = d.toISOString().split('T')[0];
   }
 }
 
-/* ── Toast ── */
+/* ââ Toast ââ */
 let _tt;
 function toast(msg, type = '') {
   const el = document.getElementById('toast');
@@ -799,9 +862,9 @@ function toast(msg, type = '') {
   _tt = setTimeout(() => { el.className = 'toast'; }, 3200);
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    SETUP
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 function doSetup() {
   const name   = document.getElementById('su-name').value.trim();
   const apiKey = document.getElementById('su-key').value.trim();
@@ -811,7 +874,7 @@ function doSetup() {
   if (!apiKey) { toast('Please enter your Brevo API key', 'err'); return; }
   if (!listId) { toast('Please enter your Brevo list ID', 'err'); return; }
   saveCfg({ name, apiKey, listId, appUrl: appUrl || pageBase(), setupDone: true });
-  toast('Setup complete! 🎉', 'ok');
+  toast('Setup complete! ð', 'ok');
   go('sc-home');
 }
 
@@ -819,9 +882,9 @@ function pageBase() {
   return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    BREVO API
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 async function brevo(endpoint, method = 'GET', body = null, keyOverride = null) {
   const c = cfg();
   const key = keyOverride || c.apiKey;
@@ -831,7 +894,7 @@ async function brevo(endpoint, method = 'GET', body = null, keyOverride = null) 
     headers: { 'api-key': key, 'Content-Type': 'application/json', 'Accept': 'application/json' }
   };
   if (body) opts.body = JSON.stringify(body);
-  const res = await fetch(BREVO + endpoint, opts);
+  const res  = await fetch(BREVO + endpoint, opts);
   const data = await res.json();
   if (!res.ok) throw new Error(data.message || `Brevo error ${res.status}`);
   return data;
@@ -841,18 +904,17 @@ async function testBrevo() {
   const key    = document.getElementById('s-key').value.trim();
   const listId = document.getElementById('s-list').value.trim();
   if (!key || !listId) { toast('Enter API key and list ID first', 'err'); return; }
-  // Temporarily save so the brevo() call works
   const c = cfg(); c.apiKey = key; c.listId = listId; saveCfg(c);
-  toast('Testing…');
+  toast('Testingâ¦');
   try {
     const d = await brevo('/account');
-    toast(`✅ Connected: ${d.email}`, 'ok');
+    toast(`â Connected: ${d.email}`, 'ok');
     document.getElementById('s-brevo-status').className = 'brevo-badge ok mb16';
-    document.getElementById('s-brevo-status').textContent = `✅ Connected: ${d.email}`;
+    document.getElementById('s-brevo-status').textContent = `â Connected: ${d.email}`;
   } catch (e) {
-    toast('❌ ' + e.message, 'err');
+    toast('â ' + e.message, 'err');
     document.getElementById('s-brevo-status').className = 'brevo-badge bad mb16';
-    document.getElementById('s-brevo-status').textContent = '● ' + e.message;
+    document.getElementById('s-brevo-status').textContent = 'â ' + e.message;
   }
 }
 
@@ -862,23 +924,22 @@ async function pushToBrevo(contact, keyOverride = null, listOverride = null) {
   const payload = {
     email: contact.email,
     attributes: {
-      FIRSTNAME: first || '',
-      LASTNAME: rest.join(' ') || '',
-      COMPANY:         contact.org        || undefined,
-      JOB_TITLE:       contact.role       || undefined,
-      BCR_WHY:         contact.why        || undefined,
-      BCR_FOLLOWUP:    contact.action     || undefined,
+      FIRSTNAME:       first || '',
+      LASTNAME:        rest.join(' ') || '',
+      COMPANY:         contact.org          || undefined,
+      JOB_TITLE:       contact.role         || undefined,
+      BCR_WHY:         contact.why          || undefined,
+      BCR_FOLLOWUP:    contact.action       || undefined,
       BCR_FOLLOWUP_DT: contact.followupDate || undefined,
-      BCR_SOURCE:      contact.source     || 'Ben - Event Capture',
-      BCR_EVENT:       contact.event      || c.eventName || '',
-      BCR_TYPE:        contact.type       || undefined,
-      BCR_GDPR:        contact.gdpr       || undefined,
-      BCR_GDPR_DATE:   contact.gdprDate   || undefined,
+      BCR_SOURCE:      contact.source       || 'Ben - Event Capture',
+      BCR_EVENT:       contact.event        || c.eventName || '',
+      BCR_TYPE:        contact.type         || undefined,
+      BCR_GDPR:        contact.gdpr         || undefined,
+      BCR_GDPR_DATE:   contact.gdprDate     || undefined,
     },
     listIds: [parseInt(listOverride || c.listId)],
     updateEnabled: true,
   };
-  // Remove undefined keys
   Object.keys(payload.attributes).forEach(k => payload.attributes[k] === undefined && delete payload.attributes[k]);
   return await brevo('/contacts', 'POST', payload, keyOverride);
 }
@@ -889,49 +950,45 @@ async function sendConsentEmail(contact) {
   await brevo('/smtp/email', 'POST', {
     to: [{ email: contact.email, name: contact.name }],
     templateId: parseInt(c.templateId),
-    params: {
-      CONTACT_NAME: contact.name,
-      MET_BY:  c.name || 'BCR',
-      EVENT:   c.eventName || 'a recent event',
-    }
+    params: { CONTACT_NAME: contact.name, MET_BY: c.name || 'BCR', EVENT: c.eventName || 'a recent event' }
   });
 }
 
 function updateBrevoIndicator() {
-  const el = document.getElementById('brevo-pill');
+  const el  = document.getElementById('brevo-pill');
   const key = cfg().apiKey;
-  el.className = 'brevo-badge ' + (key ? 'ok' : 'bad');
-  el.textContent = key ? '✅ Brevo' : '● Brevo';
+  el.className  = 'brevo-badge ' + (key ? 'ok' : 'bad');
+  el.textContent = key ? 'â Brevo' : 'â Brevo';
 }
 function updateBrevoStatusEl() {
-  const el = document.getElementById('s-brevo-status');
+  const el  = document.getElementById('s-brevo-status');
   const key = cfg().apiKey;
-  el.className = 'brevo-badge mb16 ' + (key ? 'ok' : 'bad');
-  el.textContent = key ? '✅ API key saved' : '● Not connected';
+  el.className  = 'brevo-badge mb16 ' + (key ? 'ok' : 'bad');
+  el.textContent = key ? 'â API key saved' : 'â Not connected';
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    CONTACT FORM
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 function resetForm() {
   ['f-name','f-email','f-org','f-role','f-why','f-action'].forEach(id => {
     const el = document.getElementById(id); if (el) el.value = '';
   });
 }
 function fillForm(c) {
-  document.getElementById('f-name').value   = c.name   || '';
-  document.getElementById('f-email').value  = c.email  || '';
-  document.getElementById('f-org').value    = c.org    || '';
-  document.getElementById('f-role').value   = c.role   || '';
-  document.getElementById('f-why').value    = c.why    || '';
-  document.getElementById('f-action').value = c.action || '';
-  if (c.followupDate) document.getElementById('f-date').value = c.followupDate;
+  if (c.name)         document.getElementById('f-name').value   = c.name;
+  if (c.email)        document.getElementById('f-email').value  = c.email;
+  if (c.org)          document.getElementById('f-org').value    = c.org;
+  if (c.role)         document.getElementById('f-role').value   = c.role;
+  if (c.why)          document.getElementById('f-why').value    = c.why;
+  if (c.action)       document.getElementById('f-action').value = c.action;
+  if (c.followupDate) document.getElementById('f-date').value   = c.followupDate;
 }
 
 async function saveContact(pushBrevo) {
   const name  = document.getElementById('f-name').value.trim();
   const email = document.getElementById('f-email').value.trim();
-  if (!name)               { toast('Please enter a name', 'err'); return; }
+  if (!name)                { toast('Please enter a name', 'err'); return; }
   if (!email.includes('@')) { toast('Please enter a valid email', 'err'); return; }
 
   const c = cfg();
@@ -954,7 +1011,7 @@ async function saveContact(pushBrevo) {
   saveContacts(cx);
 
   const btn = document.getElementById('save-brevo-btn');
-  btn.disabled = true; btn.textContent = '⏳ Saving…';
+  btn.disabled = true; btn.textContent = 'â³ Savingâ¦';
 
   if (pushBrevo) {
     try {
@@ -962,7 +1019,7 @@ async function saveContact(pushBrevo) {
       contact.brevoStatus = 'synced';
       cx[0] = contact; saveContacts(cx);
       try { await sendConsentEmail(contact); } catch (_) {}
-      document.getElementById('saved-title').textContent = `${contact.name} added! ✅`;
+      document.getElementById('saved-title').textContent = `${contact.name} added! â`;
       document.getElementById('saved-msg').textContent   = 'Saved to Brevo.' + (c.templateId ? ' A consent email has been sent.' : '');
     } catch (e) {
       document.getElementById('saved-title').textContent = `${contact.name} saved locally`;
@@ -973,40 +1030,35 @@ async function saveContact(pushBrevo) {
     document.getElementById('saved-msg').textContent   = 'Saved on this device. Sync to Brevo from the Contacts list when ready.';
   }
 
-  btn.disabled = false; btn.textContent = '✅ Save & Send to Brevo';
+  btn.disabled = false; btn.textContent = 'â Save & Send to Brevo';
   go('sc-saved');
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    CONTACTS LIST
-═══════════════════════════════════ */
-function renderRecent() {
-  renderList('home-recent', contacts().slice(0, 5), true);
-}
-function renderContactsList() {
-  renderList('contacts-list', contacts(), false);
-}
+âââââââââââââââââââââââââââââââââââ */
+function renderRecent() { renderList('home-recent', contacts().slice(0, 5), true); }
+function renderContactsList() { renderList('contacts-list', contacts(), false); }
 function filterContacts() {
   const q = document.getElementById('search-box').value.toLowerCase();
-  const filtered = contacts().filter(c =>
+  renderList('contacts-list', contacts().filter(c =>
     c.name.toLowerCase().includes(q) ||
     (c.email && c.email.toLowerCase().includes(q)) ||
     (c.org && c.org.toLowerCase().includes(q))
-  );
-  renderList('contacts-list', filtered, false);
+  ), false);
 }
 
 function renderList(id, cx, isHome) {
   const el = document.getElementById(id);
   if (!el) return;
   if (!cx.length) {
-    el.innerHTML = `<div class="empty"><div class="ei">${isHome ? '👋' : '🔍'}</div><p>${isHome ? 'No contacts yet.<br>Tap <strong>Add Contact</strong> to start!' : 'No contacts found'}</p></div>`;
+    el.innerHTML = `<div class="empty"><div class="ei">${isHome ? 'ð' : 'ð'}</div><p>${isHome ? 'No contacts yet.<br>Tap <strong>Add Contact</strong> to start!' : 'No contacts found'}</p></div>`;
     return;
   }
   el.innerHTML = cx.map(c => {
     const init = c.name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0,2);
     const date = new Date(c.added).toLocaleDateString('en-GB', { day:'numeric', month:'short' });
-    const icon = { synced:'✅', local:'💾', error:'⚠️' }[c.brevoStatus] || '⏳';
+    const icon = { synced:'â', local:'ð¾', error:'â ï¸' }[c.brevoStatus] || 'â³';
     return `<div class="cc" onclick="showDetail('${c.id}')">
       <div class="cc-avatar">${esc(init)}</div>
       <div class="cc-info" style="flex:1;min-width:0;">
@@ -1024,15 +1076,15 @@ function showDetail(id) {
   S.currentContact = c;
   document.getElementById('detail-hdr').textContent = c.name;
   document.getElementById('d-email').textContent  = c.email;
-  document.getElementById('d-org').textContent    = c.org    || '—';
-  document.getElementById('d-role').textContent   = c.role   || '—';
-  document.getElementById('d-why').textContent    = c.why    || '—';
-  document.getElementById('d-action').textContent = c.action || '—';
+  document.getElementById('d-org').textContent    = c.org    || 'â';
+  document.getElementById('d-role').textContent   = c.role   || 'â';
+  document.getElementById('d-why').textContent    = c.why    || 'â';
+  document.getElementById('d-action').textContent = c.action || 'â';
   document.getElementById('d-date').textContent   = c.followupDate
-    ? new Date(c.followupDate).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : '—';
+    ? new Date(c.followupDate).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : 'â';
   document.getElementById('d-added').textContent  = new Date(c.added).toLocaleString('en-GB');
-  document.getElementById('d-event').textContent  = c.event  || '—';
-  const bMap = { synced:'✅ In Brevo', local:'💾 Device only', error:'⚠️ Sync failed' };
+  document.getElementById('d-event').textContent  = c.event  || 'â';
+  const bMap = { synced:'â In Brevo', local:'ð¾ Device only', error:'â ï¸ Sync failed' };
   document.getElementById('d-brevo').textContent  = bMap[c.brevoStatus] || c.brevoStatus;
   document.getElementById('d-sync-btn').style.display = c.brevoStatus === 'synced' ? 'none' : 'flex';
   go('sc-detail');
@@ -1042,19 +1094,19 @@ async function syncCurrent() {
   const c = S.currentContact;
   if (!c) return;
   const btn = document.getElementById('d-sync-btn');
-  btn.disabled = true; btn.textContent = '⏳ Syncing…';
+  btn.disabled = true; btn.textContent = 'â³ Syncingâ¦';
   try {
     await pushToBrevo(c);
     c.brevoStatus = 'synced';
     const cx = contacts(); const i = cx.findIndex(x => x.id === c.id);
     if (i >= 0) { cx[i] = c; saveContacts(cx); }
-    document.getElementById('d-brevo').textContent = '✅ In Brevo';
+    document.getElementById('d-brevo').textContent = 'â In Brevo';
     btn.style.display = 'none';
-    toast('Synced to Brevo ✅', 'ok');
+    toast('Synced to Brevo â', 'ok');
   } catch (e) {
     c.brevoStatus = 'error';
     toast('Sync failed: ' + e.message, 'err');
-    btn.disabled = false; btn.textContent = '🔄 Retry Sync';
+    btn.disabled = false; btn.textContent = 'ð Retry Sync';
   }
 }
 
@@ -1067,12 +1119,19 @@ function deleteCurrent() {
   go('sc-contacts');
 }
 
-/* ═══════════════════════════════════
-   VOICE RECOGNITION
-═══════════════════════════════════ */
+/* âââââââââââââââââââââââââââââââââââ
+   VOICE â NATIVE (iOS Web Speech API)
+âââââââââââââââââââââââââââââââââââ */
 function toggleVoice() {
-  S.isListening ? stopListening() : startListening();
+  if (S.isListening) {
+    stopListening();
+  } else if (cfg().groqKey) {
+    startWhisperRecording();
+  } else {
+    startListening();
+  }
 }
+
 function startListening() {
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!SR) { toast('Voice input not available on this device', 'err'); return; }
@@ -1084,8 +1143,8 @@ function startListening() {
   r.onstart = () => {
     S.isListening = true;
     document.getElementById('mic-btn').classList.add('rec');
-    document.getElementById('mic-btn').textContent = '⏹️';
-    document.getElementById('voice-status').textContent = '🎤 Listening… speak clearly';
+    document.getElementById('mic-btn').textContent = 'â¹ï¸';
+    document.getElementById('voice-status').textContent = 'ð¤ Listeningâ¦ speak clearly';
   };
   r.onresult = e => {
     let interim = '';
@@ -1097,7 +1156,7 @@ function startListening() {
   r.onend = () => {
     S.isListening = false;
     document.getElementById('mic-btn').classList.remove('rec');
-    document.getElementById('mic-btn').textContent = '🎤';
+    document.getElementById('mic-btn').textContent = 'ð¤';
     document.getElementById('voice-status').textContent = 'Stopped. Review the text, then tap Next.';
     if (document.getElementById('voice-tx').value.trim()) {
       document.getElementById('voice-next').style.display = 'flex';
@@ -1107,10 +1166,88 @@ function startListening() {
   S.recognition = r;
   r.start();
 }
+
 function stopListening() {
+  // Stop Whisper recording if active
+  if (_mediaRecorder && _mediaRecorder.state !== 'inactive') {
+    _mediaRecorder.stop();
+    S.isListening = false;
+    document.getElementById('mic-btn').classList.remove('rec');
+    return;
+  }
+  // Stop native speech recognition
   if (S.recognition) { S.recognition.stop(); S.recognition = null; }
   S.isListening = false;
 }
+
+/* âââââââââââââââââââââââââââââââââââ
+   VOICE â GROQ WHISPER AI
+âââââââââââââââââââââââââââââââââââ */
+let _mediaRecorder = null;
+let _audioChunks   = [];
+
+async function startWhisperRecording() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    // Pick best supported MIME type (iOS needs mp4, most desktop supports webm)
+    const mime = ['audio/webm;codecs=opus','audio/webm','audio/mp4','audio/ogg']
+      .find(t => { try { return MediaRecorder.isTypeSupported(t); } catch { return false; } }) || 'audio/mp4';
+
+    _mediaRecorder = new MediaRecorder(stream, { mimeType: mime });
+    _audioChunks   = [];
+
+    _mediaRecorder.ondataavailable = e => { if (e.data.size > 0) _audioChunks.push(e.data); };
+    _mediaRecorder.onstop = async () => {
+      stream.getTracks().forEach(t => t.stop());
+      const statusEl = document.getElementById('voice-status');
+      const micBtn   = document.getElementById('mic-btn');
+      statusEl.textContent = 'â³ Transcribing with Whisper AIâ¦';
+      micBtn.textContent   = 'â³';
+      try {
+        const blob = new Blob(_audioChunks, { type: mime });
+        const text = await groqTranscribe(blob, mime);
+        document.getElementById('voice-tx').value = text;
+        document.getElementById('voice-next').style.display = 'flex';
+        statusEl.textContent = 'â Done â review and tap Next.';
+        micBtn.textContent   = 'ð¤';
+      } catch (e) {
+        toast('Whisper error: ' + e.message, 'err');
+        statusEl.textContent = 'Error â tap mic to try again.';
+        micBtn.textContent   = 'ð¤';
+      }
+    };
+
+    _mediaRecorder.start();
+    S.isListening = true;
+    document.getElementById('mic-btn').classList.add('rec');
+    document.getElementById('mic-btn').textContent = 'â¹ï¸';
+    document.getElementById('voice-status').textContent = 'ð¤ Recordingâ¦ tap â¹ to stop and transcribe';
+  } catch (e) {
+    toast('Microphone error: ' + e.message, 'err');
+  }
+}
+
+async function groqTranscribe(blob, mime) {
+  const ext = mime.includes('mp4') ? 'm4a' : mime.includes('webm') ? 'webm' : 'ogg';
+  const fd  = new FormData();
+  fd.append('file', blob, `recording.${ext}`);
+  fd.append('model', 'whisper-large-v3');
+  fd.append('language', 'en');
+  const res = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', {
+    method: 'POST',
+    headers: { 'Authorization': `Bearer ${cfg().groqKey}` },
+    body: fd,
+  });
+  if (!res.ok) {
+    const d = await res.json().catch(() => ({}));
+    throw new Error(d.error?.message || `Groq ${res.status}`);
+  }
+  return (await res.json()).text || '';
+}
+
+/* âââââââââââââââââââââââââââââââââââ
+   TEXT EXTRACTION (voice / OCR)
+âââââââââââââââââââââââââââââââââââ */
 function parseVoice() {
   const text = document.getElementById('voice-tx').value.trim();
   if (!text) { toast('Nothing recorded yet', 'err'); return; }
@@ -1119,35 +1256,28 @@ function parseVoice() {
   go('sc-form');
 }
 
-/* ═══════════════════════════════════
-   TEXT EXTRACTION (voice / OCR)
-═══════════════════════════════════ */
 function extractContact(text) {
   const c = {};
-  // Email
   const em = text.match(/\b[\w.+-]+@[\w.-]+\.[a-z]{2,}\b/i);
   if (em) c.email = em[0];
-  // Name patterns
   const namePats = [
-    /(?:name(?:'s| is)|this is|called|i'm|it's)\s+([A-Z][a-záéíóú]+(?:\s+[A-Z][a-záéíóú]+)+)/i,
+    /(?:name(?:'s| is)|this iq|called|i'm|it's)\s+([A-Z][a-zÃ¡Ã©Ã­Ã³Ãº]+(?:\s+[A-Z][a-zÃ¡Ã©Ã­Ã³Ãº]+)+)/i,
     /^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)/,
   ];
   for (const p of namePats) { const m = text.match(p); if (m) { c.name = m[1].trim(); break; } }
-  // Org
   const orgPats = [
     /(?:works? (?:at|for)|from)\s+([A-Z][A-Za-z\s&,]+?)(?:\.|,|\band\b|$)/,
     /(?:organisation|company|council|trust) (?:is|called)\s+([A-Z][A-Za-z\s&]+?)(?:\.|,|$)/i,
   ];
   for (const p of orgPats) { const m = text.match(p); if (m) { c.org = m[1].trim(); break; } }
-  // Role
-  const rm = text.match(/(?:(?:she|he|they)'?(?:re|s|'re)? (?:a |an )?|(?:role|title) (?:is|:)\s*)([a-z][a-z\s-]+?)(?:\s+at\s|\s+for\s|\.|,|$)/i);
+  const rm = text.match(/(?:(?:she|he|they)'?(?:re|s|'re)? (?:a |an )?|(?:role|title) (?:is&ú)\s*)([a-z][a-z\s-]+?)(?:\s+at\s|\s+for\s|\.|,|$)/i);
   if (rm) c.role = rm[1].trim();
   return c;
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    CAMERA / OCR
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 async function startCam() {
   try {
     const stream = await navigator.mediaDevices.getUserMedia({
@@ -1156,14 +1286,13 @@ async function startCam() {
     S.camStream = stream;
     document.getElementById('cam-video').srcObject = stream;
     document.getElementById('cap-btn').style.display = 'flex';
-    document.getElementById('ocr-result').style.display = 'none';
+    document.getElementById('ocr-result').style.display  = 'none';
     document.getElementById('ocr-loading').style.display = 'none';
   } catch (e) { toast('Camera access denied: ' + e.message, 'err'); }
 }
 function stopCam() {
   if (S.camStream) { S.camStream.getTracks().forEach(t => t.stop()); S.camStream = null; }
 }
-
 async function captureCard() {
   const video  = document.getElementById('cam-video');
   const canvas = document.getElementById('cam-canvas');
@@ -1171,26 +1300,25 @@ async function captureCard() {
   canvas.height = video.videoHeight;
   canvas.getContext('2d').drawImage(video, 0, 0);
   stopCam();
-  document.getElementById('cap-btn').style.display = 'none';
+  document.getElementById('cap-btn').style.display  = 'none';
   document.getElementById('ocr-loading').style.display = 'block';
   try {
     if (!window.Tesseract) await loadTesseract();
     const { data: { text } } = await Tesseract.recognize(canvas, 'eng', {
       logger: m => {
         if (m.status === 'recognizing text')
-          document.getElementById('ocr-prog').textContent = 'Reading card… ' + Math.round(m.progress * 100) + '%';
+          document.getElementById('ocr-prog').textContent = 'Reading cardâ¦ ' + Math.round(m.progress * 100) + '%';
       }
     });
     document.getElementById('ocr-loading').style.display = 'none';
     document.getElementById('ocr-text').value = text.trim();
-    document.getElementById('ocr-result').style.display = 'block';
+    document.getElementById('ocr-result').style.display  = 'block';
   } catch (e) {
     document.getElementById('ocr-loading').style.display = 'none';
     document.getElementById('cap-btn').style.display = 'flex';
     toast('Could not read card: ' + e.message + '. Try manual entry.', 'err');
   }
 }
-
 function loadTesseract() {
   return new Promise((res, rej) => {
     const s = document.createElement('script');
@@ -1204,24 +1332,164 @@ function parseOCR() {
   resetForm(); fillForm(extractContact(text)); go('sc-form');
 }
 
-/* ═══════════════════════════════════
-   QR CODE
-═══════════════════════════════════ */
+/* âââââââââââââââââââââââââââââââââââ
+   vCARD IMPORT (.vcf file)
+âââââââââââââââââââââââââââââââââââ */
+function triggerVCF() {
+  const inp = document.getElementById('vcf-input');
+  inp.value = '';   // reset so re-selecting same file fires onchange
+  inp.click();
+}
+
+function handleVCF(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    const parsed = parseVCard(ev.target.result);
+    if (!parsed.name && !parsed.email) {
+      toast('Could not read contact from file', 'err'); return;
+    }
+    resetForm(); fillForm(parsed);
+    toast('Contact card imported â', 'ok');
+    go('sc-form');
+  };
+  reader.readAsText(file);
+}
+
+function parseVCard(text) {
+  // Helper: get first match for a vCard field (handles TYPE params like EMAIL;TYPE=WORK:...)
+  const get = field => {
+    const m = text.match(new RegExp('^' + field + '[^:\\r\\n]*:([^\\r\\n]+)', 'im'));
+    return m ? m[1].trim().replace(/\\n/gi, ' ').replace(/\\,/g, ',') : '';
+  };
+
+  // Full name
+  let name = get('FN');
+  if (!name) {
+    // N field: Surname;Given;Middle;Prefix;Suffix
+    const n = get('N').split(';');
+    name = [n[1], n[0]].filter(Boolean).join(' ').trim();
+  }
+
+  // Email â grab all EMAIL lines and pick first non-empty
+  const emailMatch = text.match(/^EMAIL[^:\r\n]*:([^\r\n]+)/im);
+  const email      = emailMatch ? emailMatch[1].trim() : '';
+
+  return {
+    name,
+    email,
+    org:  get('ORG').split(';')[0],  // ORG can be "Company;Department"
+    role: get('TITLE') || get('ROLE'),
+  };
+}
+
+/* âââââââââââââââââââââââââââââââââââ
+   CONTACT QR SCAN
+   Supports: meCard (Android), vCard QR
+âââââââââââââââââââââââââââââââââââ */
+let _qrStream = null;
+let _qrTimer  = null;
+
+async function startQRScan() {
+  const statusEl = document.getElementById('qrscan-status');
+  if (!window.jsQR) {
+    statusEl.textContent = 'Loading scannerâ¦';
+    try { await loadJsQR(); } catch { toast('Could not load QR scanner', 'err'); return; }
+  }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: 'environment' }
+    });
+    _qrStream = stream;
+    const v = document.getElementById('qrscan-video');
+    v.srcObject = stream;
+    await v.play();
+    statusEl.textContent = 'ð· Scanning â hold QR code steadyâ¦';
+    _qrTimer = setInterval(scanQRFrame, 250);
+  } catch (e) {
+    toast('Camera access denied', 'err');
+    statusEl.textContent = 'Camera access denied â check Settings â Safari â Camera';
+  }
+}
+
+function scanQRFrame() {
+  const v = document.getElementById('qrscan-video');
+  if (v.readyState < 2) return;
+  const c = document.getElementById('qrscan-canvas');
+  c.width = v.videoWidth; c.height = v.videoHeight;
+  const ctx = c.getContext('2d');
+  ctx.drawImage(v, 0, 0);
+  const img  = ctx.getImageData(0, 0, c.width, c.height);
+  const code = jsQR(img.data, img.width, img.height, { inversionAttempts: 'dontInvert' });
+  if (code) { stopQRScan(); handleQRData(code.data); }
+}
+
+function stopQRScan() {
+  clearInterval(_qrTimer); _qrTimer = null;
+  if (_qrStream) { _qrStream.getTracks().forEach(t => t.stop()); _qrStream = null; }
+}
+
+function handleQRData(raw) {
+  let contact = {};
+  const upper = raw.toUpperCase();
+
+  if (upper.startsWith('MECARD:')) {
+    // meCard format: MECARD:N:Surname,Given;EMAIL:...;ORG:...;END:
+    const get = k => { const m = raw.match(new RegExp(k + ':([^;]+)', 'i')); return m ? m[1].trim() : ''; };
+    const nm  = get('N').split(',');
+    contact = {
+      name:  nm.length > 1 ? `${nm[1].trim()} ${nm[0].trim()}` : nm[0].trim(),
+      email: get('EMAIL') || get('MAIL'),
+      org:   get('ORG')   || get('COMPANY'),
+      role:  get('TITLE'),
+    };
+  } else if (raw.includes('BEGIN:VCARD')) {
+    contact = parseVCard(raw);
+  } else {
+    toast("QR found but it's not a contact code â try again", '');
+    document.getElementById('qrscan-status').textContent = 'Not a contact QR â try again';
+    startQRScan();
+    return;
+  }
+
+  if (!contact.name && !contact.email) {
+    toast('Could not read contact from QR code', 'err');
+    document.getElementById('qrscan-status').textContent = 'Could not read â try again';
+    startQRScan();
+    return;
+  }
+
+  document.getElementById('qrscan-status').textContent = 'â Contact found!';
+  toast('Contact QR scanned â', 'ok');
+  resetForm(); fillForm(contact);
+  setTimeout(() => go('sc-form'), 500);
+}
+
+function loadJsQR() {
+  return new Promise((res, rej) => {
+    const s = document.createElement('script');
+    s.src    = 'https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js';
+    s.onload = res; s.onerror = rej;
+    document.head.appendChild(s);
+  });
+}
+
+/* âââââââââââââââââââââââââââââââââââ
+   QR CODE (self-registration)
+âââââââââââââââââââââââââââââââââââ */
 function buildQR() {
-  const c = cfg();
+  const c    = cfg();
   const base = (c.appUrl || pageBase()).replace(/\/$/, '');
-  // Encode key + listId into URL so the registration form can call Brevo directly
   const qParams = new URLSearchParams({
     register: '1',
-    k: btoa(c.apiKey  || ''),
-    l: btoa(c.listId  || ''),
+    k: btoa(c.apiKey   || ''),
+    l: btoa(c.listId   || ''),
     e: btoa(c.eventName || ''),
-    n: btoa(c.name    || ''),
+    n: btoa(c.name     || ''),
   });
   const url = `${base}?${qParams}`;
-
   document.getElementById('qr-url-text').textContent = url;
-
   const container = document.getElementById('qr-canvas-container');
   container.innerHTML = '';
   if (window.QRCode) {
@@ -1232,7 +1500,7 @@ function buildQR() {
       correctLevel: QRCode.CorrectLevel.M,
     });
   } else {
-    container.innerHTML = '<p class="tm">QR code loading…</p>';
+    container.innerHTML = '<p class="tm">QR code loadingâ¦</p>';
     setTimeout(() => { if (window.QRCode) buildQR(); }, 800);
   }
 }
@@ -1254,9 +1522,9 @@ async function shareQR() {
   }
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    SETTINGS
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 function saveSettings() {
   const prev = cfg();
   saveCfg({
@@ -1265,16 +1533,17 @@ function saveSettings() {
     listId:     document.getElementById('s-list').value.trim(),
     appUrl:     document.getElementById('s-url').value.trim(),
     templateId: document.getElementById('s-template').value.trim(),
+    groqKey:    document.getElementById('s-groq').value.trim(),
     eventName:  prev.eventName || '',
     setupDone:  true,
   });
-  toast('Settings saved ✅', 'ok');
+  toast('Settings saved â', 'ok');
   updateBrevoStatusEl();
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    SELF-REGISTRATION (public form)
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 async function submitReg() {
   const name = document.getElementById('r-name').value.trim();
   const email= document.getElementById('r-email').value.trim();
@@ -1284,14 +1553,13 @@ async function submitReg() {
   if (!gdpr)                { toast('Please tick the consent box to continue', 'err'); return; }
 
   const btn = document.querySelector('#reg-form .btn-red');
-  btn.disabled = true; btn.textContent = '⏳ Submitting…';
+  btn.disabled = true; btn.textContent = 'â³ Submittingâ¦';
 
   const { k, l, e, n } = S.regParams;
   if (k && l) {
     try {
       const contact = {
-        name,
-        email,
+        name, email,
         org:      document.getElementById('r-org').value.trim(),
         role:     document.getElementById('r-role').value.trim(),
         type:     document.getElementById('r-type').value,
@@ -1301,28 +1569,25 @@ async function submitReg() {
         source:   'QR Self-Registration',
       };
       await pushToBrevo(contact, k, l);
-    } catch (err) {
-      console.warn('Brevo reg error:', err.message);
-      // Degrade gracefully — user still sees thank-you
-    }
+    } catch (err) { console.warn('Brevo reg error:', err.message); }
   }
 
   document.getElementById('reg-form').style.display   = 'none';
   document.getElementById('reg-thanks').style.display = 'block';
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    EXPORT / DATA
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 function exportCSV() {
   const cx = contacts();
   if (!cx.length) { toast('No contacts to export', ''); return; }
-  const hdr = ['Name','Email','Organisation','Role','Why Important','Follow-up Action','Follow-up Date','Event','Added','Brevo Status'];
+  const hdr  = ['Name','Email','Organisation','Role','Why Important','Follow-up Action','Follow-up Date','Event','Added','Brevo Status'];
   const rows = cx.map(c => [c.name,c.email,c.org||'',c.role||'',c.why||'',c.action||'',c.followupDate||'',c.event||'',c.added,c.brevoStatus]
     .map(v => `"${String(v).replace(/"/g,'""')}"`));
-  const csv = [hdr.join(','), ...rows.map(r => r.join(','))].join('\n');
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+  const csv  = [hdr.join(','), ...rows.map(r => r.join(','))].join('\n');
+  const a    = document.createElement('a');
+  a.href     = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
   a.download = `bcr-contacts-${new Date().toISOString().slice(0,10)}.csv`;
   a.click();
 }
@@ -1334,25 +1599,25 @@ function clearData() {
   setTimeout(() => location.reload(), 1000);
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    UTILITY
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 function esc(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    SERVICE WORKER
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () =>
     navigator.serviceWorker.register('sw.js').catch(e => console.warn('SW:', e))
   );
 }
 
-/* ═══════════════════════════════════
+/* âââââââââââââââââââââââââââââââââââ
    INIT
-═══════════════════════════════════ */
+âââââââââââââââââââââââââââââââââââ */
 function init() {
   const params = new URLSearchParams(window.location.search);
 
@@ -1370,7 +1635,7 @@ function init() {
     document.getElementById('reg-intro').textContent =
       rp.n && rp.e
         ? `You met ${rp.n} at ${rp.e}. Fill in your details below to stay connected with BCR.`
-        : 'Fill in your details to stay connected with BCR\'s programmes and events.';
+        : "Fill in your details to stay connected with BCR's programmes and events.";
     go('sc-register');
     return;
   }
